@@ -1,9 +1,13 @@
 .header {
   height: 200px;
+  line-height: 200px;
+  text-align: center;
   background-color: #00cc99; }
 
 .footer {
   height: 200px;
+  line-height: 200px;
+  text-align: center;
   background-color: #00cc99; }
 
 .modal_container {
@@ -159,6 +163,9 @@
           padding-left: 25px; }
         .PageContainer .sidebar .mnuBar li .text {
           padding-left: 15px; }
+        .PageContainer .sidebar .mnuBar li ::hover {
+          cursor: pointer;
+          background-color: #837d7d; }
       .PageContainer .sidebar .mnuBar .active {
         border-left: 5px solid #198754;
         color: #198754; }
