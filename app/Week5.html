@@ -1,0 +1,204 @@
+---
+title: 第五周
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+
+<div class="wrap">
+        <!-- <h1>Week 5 排版</h1> -->
+        <div class="PageContainer">
+
+
+            <div class="sidebar">
+
+                <div class="logo">
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg" 
+                         alt="" srcset="">
+                </div>
+
+
+
+                <ul class="mnuBar">
+                    <li>
+                       <img src="../assets/images/file-bar-graph-fill.svg" alt="" srcset="">
+                       <div class="text">Dashboard</div> 
+                    </li>
+                    <li>
+
+                    <i class="fa-solid fa-message"></i>
+                      <div class="text">Question</div>  
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clipboard-list"></i>
+                       <div class="text">Assignment</div> 
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-play"></i>
+                       <div class="text">Course</div> 
+                    </li>
+                    <li class="active">
+                        <i class="fa-solid fa-user-group"></i>
+                       <div class="text">Admin</div> 
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                       <div class="text">Settings</div> 
+                    </li>
+                </ul>
+
+
+                <div class="profile">
+                    <div class="photo">
+                        <img width="20px" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="" srcset="">
+                    </div>
+                    <div class="account">
+                        <div class="name">Andy Chen</div>
+                        <div class="mail">
+                            andy0401@mail.com
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mainContent">
+
+                <div class="titleBar">
+                    <div class="logo">
+                        <div>Admin</div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            
+                            Add New Admin
+                        </div>
+                    </div>
+                
+                    <div class="search">
+
+
+
+                        <div data-toggle="modal" data-target="#editForm"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div><i class="fa-solid fa-bell"></i></div>
+                    </div>
+                
+                
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Verified</th>
+                            <th></th>
+                        </tr>
+                
+                    </thead>
+                
+                    <tbody>
+                        <tr>
+                            <td>#1</td>
+                            <td>Emir Wicks</td>
+                            <td>emir.wicks@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <i class="fa-solid fa-eye"  data-toggle="modal" data-target="#editForm"></i>
+                                <i class="fa-solid fa-pen"></i>
+                            </td>
+                        </tr>
+                
+                
+                        <tr>
+                            <td>#2</td>
+                            <td>Zaina Goldsmith</td>
+                            <td>zaina.goldsmith@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pen"></i>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>#3</td>
+                            <td>Mahima Lopez</td>
+                            <td>emir.wicks@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pen"></i>
+                            </td>
+                        </tr>
+                
+                
+                
+                
+                        <tr>
+                            <td>#4</td>
+                            <td>Pharrell Murray</td>
+                            <td>pharrell.murray@mail.com</td>
+                            <td>Yes</td>
+                            <td>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pen"></i>
+                            </td>
+                        </tr>
+                
+                    </tbody>
+                
+                </table>
+                
+                
+                <div class="pgbar">
+                    <ul>
+                        <li class="tab"><</li>
+                        <li class='tab active'>1</li>
+                        <li class="tab">2</li>
+                        <li class="tab">3</li>
+                        <li class="tab">></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+<div class="modal fade" id="editForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal_container">
+        <!-- left -->
+        <div class="img">
+            <img  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emir.jpeg?raw=true" alt="">
+        </div>
+        <!-- right -->
+        <div class="content">
+            <div class="title">
+                <div class="index">#1</div>
+                <div class="closeBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="content">
+                <h3>Admin</h3>
+                <h1>Emir Wicks</h1>
+                <p>emir wicks@gmail.com</p>
+            </div>
+
+            <div class="dropDoemList">
+                <label >Verified</label>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>

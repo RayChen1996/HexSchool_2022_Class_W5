@@ -10,6 +10,77 @@ $color: #00cc99;
   background-color: #00cc99;
 }
 
+
+.modal_container{
+  display: flex; 
+  .img{ 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    img{
+      padding: 5px;
+      box-sizing: border-box;
+      height: 80px;
+      height: 100%;
+      text-align: center;
+    }
+  }
+
+  .content{
+    
+    .title{
+      display: flex;
+      justify-content: space-between;
+    }
+    .content{
+      width: 100%;
+    }
+    .dropDoemList{
+
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+}
+.main_nav{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  a{
+    margin: 5px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #19896d;
+    color: white;
+  }
+  :hover {
+    background-color: #06634c;
+  }
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: 1px solid black;
+  text-decoration: none;
+  a{
+    text-decoration: none;
+  }
+  ul{
+    text-decoration: none;
+    li{
+      text-decoration: none;
+    }
+  }
+}
+
+
 .box {
   width: 100px;
   height: 100px;
@@ -21,3 +92,180 @@ $color: #00cc99;
     background-color: $color;
   }
 }
+
+
+
+
+.PageContainer{
+  display: flex;
+  flex-direction: row; 
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    width: 20%;
+    justify-content: space-between;
+    text-align: center;
+  .logo {
+      display: flex;
+      padding-left: 1px;
+      justify-content: center;
+      padding: 20px;
+      width: 100%;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mnuBar{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      padding-left: 0px;
+      li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content:flex-start;  
+        width: 100%; 
+        margin-bottom: 5px;
+        margin-top: 5px;
+        img,i{
+          padding-left: 25px;
+        }
+        .text{
+          padding-left: 15px;
+        }
+      }
+      .active{
+        border-left: 5px solid #198754;
+        color: #198754;
+      }
+    }
+
+    .profile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      .mail{
+        color: #ccc;
+        font-size: 15px;
+      }
+      .photo{
+        
+        img{
+          border-radius: 50%;
+        }
+      }
+
+    }
+  }
+
+  .mainContent{
+    width: 80%;
+    .pgbar{
+        display: flex;
+          justify-content: flex-end;
+          margin-top: 15px;
+          margin-right: 20px;
+          border-radius: 25% 10%;
+      ul{
+        display: flex;
+        .active {
+            background-color: #198754;
+            color: white;
+            font-weight: 700;
+
+          }
+          :first-child {
+            font-weight: bolder;
+            font-size: larger;
+            border-top-left-radius: 8px 8px;
+            border-bottom-left-radius: 8px 8px;
+          }
+          :last-child{
+            font-weight: bolder;
+            font-size: larger;
+            border-top-right-radius: 8px 8px;
+            border-bottom-right-radius: 8px 8px;
+          }
+
+        li{
+          padding: 15px;
+          border: 2px solid green;
+          cursor: pointer;
+    
+        }
+      }
+    }
+    .titleBar{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+      .logo{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-left: 15px;
+        padding-left: 10px;
+        width: 25%;
+        font-weight: 700;
+                /*     outline:1px solid black; */
+          cursor: pointer;
+          i {
+            color: #198754;
+        
+          }
+      }
+      .search {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        margin-left: 15px;
+        padding-left: 10px;
+        width: 8%;
+      }
+    }
+
+    table {
+      width: 100%;
+      text-align: center;
+      thead{
+
+        th{
+          border-bottom: 1.5px solid #000;
+          font-weight: 700;
+        }
+
+      }
+      tbody{
+
+        tr {
+            border-bottom: 1px solid #ddd;
+        
+            td {
+              padding: 20px;
+        
+              i {
+                margin: 5px;
+              }
+            }
+          }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+ 
+
+
+
