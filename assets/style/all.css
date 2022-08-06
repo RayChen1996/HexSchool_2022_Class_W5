@@ -6,6 +6,46 @@
   height: 200px;
   background-color: #00cc99; }
 
+.modal_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .modal_container .img {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80px; }
+    .modal_container .img img {
+      padding: 5px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      height: 80px;
+      height: 100%;
+      text-align: center; }
+  .modal_container .content .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .modal_container .content .content {
+    width: 100%; }
+  .modal_container .content .dropDoemList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
 .main_nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +70,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  outline: 1px solid black;
   text-decoration: none; }
   * a {
     text-decoration: none; }
@@ -136,6 +177,8 @@
       .PageContainer .sidebar .profile .mail {
         color: #ccc;
         font-size: 15px; }
+      .PageContainer .sidebar .profile .photo img {
+        border-radius: 50%; }
   .PageContainer .mainContent {
     width: 80%; }
     .PageContainer .mainContent .pgbar {
